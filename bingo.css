@@ -1,0 +1,61 @@
+body {
+  background: rgb(204,204,204);
+}
+
+@font-face {
+    font-family: rocky;
+    src: url(ROCKYAOE.ttf);
+}
+
+page[size="A4"] {
+  background: white;
+  width: 21cm;
+  height: 30.5cm;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+.square{
+  display: flex;
+  flex: 1;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 48;
+  font-family: 'rocky';
+  color: #ff100c;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+}
+
+.card{
+  border: 1px dotted black;
+  display: flex;
+  flex-direction: column;
+  width: 49.5%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label{
+  display: flex;
+  align-self: flex-start;
+}
+
+.form-input{
+  display: flex;
+  align-self: flex-end;
+}

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="bingo.css">
+    <script type="text/javascript" src="bingo.js"></script>
+  </head>
+  <body>
+      <div class="flex-container">
+        <div>
+          <label class="form-label">Number of rows</label>
+          <input class="form-input" type="number" id="numberOfRows" min="1" max ="15" value="3"/>
+        </div>
+        <div>
+          <label class="form-label">Number of columns</label>
+          <input class="form-input" type="number" id="numberOfCols" min="1" max="15" value="3"/>
+        </div>
+        <div>
+          <label class="form-label">Total number of cards</label>
+          <input class="form-input" type="number" id="numberOfCards" min="1" max="1000" value="150"/>
+        </div>
+        <div>
+          <label class="form-label">Number of cards per page</label>
+          <input class="form-input" type="number" id="numberOfCardsPerPage" min="2" max="16" value="4"/>
+        </div>
+        <div>
+          <label class="form-label">Minimum number</label>
+          <input class="form-input" type="number" id="minNumber" min="1" max="999" value="1"/>
+        </div>
+        <div>
+          <label class="form-label">Maximum number</label>
+          <input class="form-input" type="number" id="maxNumber" min="1" max="999" value="99"/>
+        </div>
+      </div>
+
+    <button onclick="generateCards()">Generate</button>
+  </body>
+</html>
